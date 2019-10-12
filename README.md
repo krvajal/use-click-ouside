@@ -5,13 +5,19 @@ Useful for implementing modal dialogs and popups.
 ## Installation
 
 ```bash
-yarn add @krvajal/use-click-ouside
+yarn add @sweepbright/use-click-ouside
 ```
 
 ```
-npm install @krvajal/use-click-ouside
+npm install @sweepbright/use-click-ouside
 ```
 
 ### Usage
 
+TODO
 
+### Contributing
+TODO
+
+### License
+MIT
