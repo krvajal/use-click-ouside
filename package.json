@@ -1,5 +1,5 @@
 {
-  "name": "use-click-outside",
+  "name": "@krvajal/use-click-outside",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/use-click-outside.esm.js",
