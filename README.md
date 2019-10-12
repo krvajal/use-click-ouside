@@ -14,7 +14,24 @@ npm install @sweepbright/use-click-ouside
 
 ### Usage
 
-TODO
+```javascript
+import  {useClickOutside} from '@sweepbright/use-click-outside'
+
+
+function Popup() {
+    const ref= React.useRef(null)
+    const onClickOutside = React.useCallback(() => {
+        alert('clicked outside element')
+    })
+
+    useClickOuside(ref, {
+        onClickOutside
+    })
+
+    return <div ref={ref}> Hello </div>
+
+}
+```
 
 
 ### API
