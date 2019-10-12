@@ -1,6 +1,6 @@
 {
-  "name": "@krvajal/use-click-outside",
-  "version": "0.1.0",
+  "name": "@sweepbright/use-click-outside",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "module": "dist/use-click-outside.esm.js",
   "typings": "dist/index.d.ts",
@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "start": "tsdx watch",
+    "prepare": "npm run build",
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "lint": "tsdx lint"

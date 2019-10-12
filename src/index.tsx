@@ -5,11 +5,12 @@ export type Config = {
   onClickOutside: (evt: MouseEvent) => any
 }
 
-export default function useClickOutside(
-  ref: HTMLElement | null,
+export function useClickOutside(
+  ref: {current: HTMLElement | null},
   { skip = false, onClickOutside }: Config,
   deps: any[] = []
 ) {
+  // @ts-ignore
   React.useEffect(() => {
     if (!skip) {
       document.addEventListener("click", handleClickOutside);
@@ -19,7 +20,7 @@ export default function useClickOutside(
       };
     }
     function handleClickOutside(evt: MouseEvent) {
-      if (ref && !ref.contains(evt.target as Node)) {
+      if (ref.current && !ref.current.contains(evt.target as Node)) {
         evt.preventDefault();
         evt.stopPropagation();
         onClickOutside(evt);
