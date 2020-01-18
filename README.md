@@ -24,7 +24,7 @@ function Popup() {
         alert('clicked outside element')
     })
 
-    useClickOuside(ref, {
+    useClickOutside(ref, {
         onClickOutside
     })
 
