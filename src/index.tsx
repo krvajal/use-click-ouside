@@ -13,10 +13,10 @@ export function useClickOutside(
   // @ts-ignore
   React.useEffect(() => {
     if (!skip) {
-      document.addEventListener("click", handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
 
       return () => {
-        document.removeEventListener("click", handleClickOutside);
+        document.removeEventListener("mousedown", handleClickOutside);
       };
     }
     function handleClickOutside(evt: MouseEvent) {
